@@ -9,49 +9,83 @@ body{
     justify-content:space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 header{
+    /* background-color: grey; */
     width: 100%;
     display: flex;
     justify-content:space-between;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 15px;
+    align-items: flex-end;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.item_h1{
+    width: 20%;
+}
+
+.item_h2{
+    display: flex;
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 40px;
+    color: #030045;
+    justify-content: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    /* background: rgb(0,153,176);
+    background: linear-gradient(275deg, rgba(0,153,176,0.6783088235294117) 0%, rgba(0,153,176,0.8995973389355743) 50%, rgba(0,153,176,1) 100%); */
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #005578;
+    display: flex;
+
 }
 
 .main{
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     margin: 25px;
     width: 95%;
     height: 100px;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
+    margin-bottom: 50px;
     
 }
 .teamName{
     border: 1px solid white;
-    background-color: blue;
+    /* background-color: blue; */
     color: black;
     display: flex;
     justify-content:center;
     align-items: center;
-    font-weight: bold;
     width: 60px;
     height: 30px;
     margin-left: 30px;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .mainContent{
     display: flex;
     flex-wrap: wrap;
-    background-color: crimson;
+    /* background-color: crimson; */
     margin: 5px;
 
 }
 #teamOption{
     display: flex;
+    align-items: center;
     width: 15%;
+    border: 1px solid whitesmoke;
+    font-size: 20px;
+    color: #005578;
+    font-family: 'Noto Sans KR', sans-serif;
 
 } 
 
@@ -62,7 +96,7 @@ header{
 
 
 #container{
-    background-color: yellow;
+    /* background-color: yellow; */
     width : 95%;
     height: 300px;
     display: flex;
@@ -95,12 +129,11 @@ header{
     margin: 1px;
 }
 .item{
-    background-color: brown;
+    background-color: #0099B0;
     color: aliceblue;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
     width: 100%;
     height: 10px;
     flex-grow: 1;
@@ -115,12 +148,12 @@ header{
 
 .item4{
     border: 1px solid white;
-    background-color: brown;
+    background-image: linear-gradient(to right top, #051937, #023658, #005578, #007696, #0099b0);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: flex-start;
-    font-weight: bold;
+    
     width: 100px;
     height:90%;
     flex-grow: 0.5;
@@ -128,12 +161,12 @@ header{
 
 .item2, .item3{
     border: 1px solid white;
-    background-color: brown;
+    background-image: linear-gradient(to right top, #051937, #023658, #005578, #007696, #0099b0);
     display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: flex-start;
-    font-weight: bold;
+    
     width: 100px;
     height:90%;
     flex-grow: 4;
@@ -144,13 +177,13 @@ header{
     display: block;
     justify-content: center;
     flex-grow: 1;
-    background-color: darkgreen;
+    /* background-color: darkgreen; */
 }
 
 .send{
     display: flex;
     justify-content: center;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin: 10px;
     width: 100%;
     height: 50px;
@@ -162,15 +195,41 @@ header{
     height: 100%;
     justify-content: center;
     align-items: center;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 18px;
+    background-color: coral;
+    font-family: 'Noto Sans KR', sans-serif;
 }
+
 
 footer{
-    display: flex;
-    justify-content: center;
-    background-color: wheat;
-    margin: 10px;
+    position:inherit;
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     width: 100%;
+    justify-content: center;
+    
+}
+.custom-shape-divider-bottom-1648176615 {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
 }
 
+.custom-shape-divider-bottom-1648176615 svg {
+    position: relative;
+    display: flex;
+    width: calc(226% + 1.3px);
+    height: 211px;
+}
+
+.custom-shape-divider-bottom-1648176615 .shape-fill {
+    fill: #0099B0;
+}
+h5{
+    display: flex;
+    justify-content: center;
+}
