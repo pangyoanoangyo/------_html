@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>업무보고</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav><h1>주간업무보고</h1></nav>
+        </header>
+
+
+        <table class="tableClass">
+            <th> 구 분 </th>
+            <th> 전주 실적<span>(날짜)</span></th>
+            <th> 금주 계획 <span>(날짜)</span></th>
+            <th> 비 고 </th>
+            <tr>
+                <td> <textarea class="textArea"></textarea>  </td>
+                <td> <textarea class="textArea"></textarea> </td>
+                <td> <textarea class="textArea"></textarea> </td>
+                <td> <textarea class="textArea"></textarea> </td>
+            </tr>
+        </table>
+
+    
+
+
+        <section id="headName">
+            <form action="" method="get">
+                <div>
+                    <label for="team_name"><b> 팀  명 : </label>
+                    <input type="text" name="name" id="name" required>
+                </div><br>
+                <div>
+                    <label for="name"> 성  명 : </label>
+                    <input type="text" name="name" id="name" required>
+                </div><br>
+                <div>
+                    <label for="name"> 일  정 : </label>
+                    <input type="date" name="name" id="name" required ></b>
+                </div><br><br>
+            </form>
+        </section>
+        <div id = "weekReport">
+                <form>
+                    <fieldset class="week">
+                        <legend>전주 실적<span>(날짜)</span></legend>
+                        <textarea class="textArea"></textarea>
+                    </fieldset>
+                </form>
+                <form>
+                    <fieldset class="week">
+                        <legend>금주 계획<span>(날짜)</span></legend>
+                        <textarea class="textArea"></textarea>
+                    </fieldset>
+                </form>
+        </div>
+        <footer>
+            <form>
+                <fieldset class="footForm">
+                    <legend >기타 의견<span></span></legend>
+                    <textarea class="textArea"></textarea>
+                </fieldset>
+                <input class="send" type="submit" value="제출">
+            </form>
+                
+        </footer>
+        <div class ="copyRight">            
+            <h5> Copyright © Domestic Business Solution Sales Team 2022</h5>
+        </div>
+
+
+    
+    </div>
+</body>
+</html>
